@@ -1,0 +1,211 @@
+.body {
+
+    display: flex;
+}
+
+
+.wrapper {
+
+
+    display: flex;
+    height: 32em;
+    width: 10em;
+    flex-direction: column;
+    background: grey;
+
+}
+
+
+.light {
+
+    flex-direction: column;
+    height: 67%;
+    width: 80%;
+    background-color: rgba(255, 252, 252, 0.68);
+    align-content: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    align-content: center;
+    align-self: center;
+
+}
+
+.buttons {
+
+    display: flex;
+    flex-direction: column;
+    height: 22%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+
+}
+
+
+.on_off_btn {
+
+
+       margin-bottom: 5%;
+       height: 3em;
+
+}
+
+.swtch_orntn {
+
+
+      margin-bottom: 5%;
+      height: 3em;
+
+}
+
+
+.swtch_clr {
+
+
+       margin-bottom: 5%;
+       height: 3em;
+
+}
+
+.red {
+
+
+    align-self: center;
+    align-content: center;
+    margin: 0 auto;
+    background: rgba(98, 131, 109, 0.63);
+    width: 6em;
+    height: 6em;
+    border-radius: 3em;
+    border-bottom: 20%;
+    margin-top: 10%;
+
+}
+
+.yellow {
+
+
+    align-self: center;
+    align-content: center;
+    margin: 0 auto;
+    background: rgba(137, 137, 113, 0.6);
+    width: 6em;
+    height: 6em;
+    border-radius: 3em;
+    margin-top: 10%;
+
+
+}
+
+
+.green {
+
+    align-self: center;
+    align-content: center;
+    margin: 0 auto;
+    background: #7c6d6d;
+    width: 6em;
+    height: 6em;
+    border-radius: 3em;
+    margin-top: 10%;
+
+}
+
+.green_active {
+
+  align-self: center;
+  align-content: center;
+  margin: 0 auto;
+  background: green;
+  width: 6em;
+  height: 6em;
+  border-radius: 3em;
+  border-bottom: 20%;
+  margin-top: 10%;
+
+
+}
+
+.yellow_active {
+
+  align-self: center;
+  align-content: center;
+  margin: 0 auto;
+  background: yellow;
+  width: 6em;
+  height: 6em;
+  border-radius: 3em;
+  border-bottom: 20%;
+  margin-top: 10%;
+
+
+
+}
+
+
+.red_active {
+
+  align-self: center;
+  align-content: center;
+  margin: 0 auto;
+  background: red;
+  width: 6em;
+  height: 6em;
+  border-radius: 3em;
+  border-bottom: 20%;
+  margin-top: 10%;
+
+}
+
+/*
+
+.green:hover {
+
+    align-self: center;
+    align-content: center;
+    margin: 0 auto;
+    background: green;
+    width: 6em;
+    height: 6em;
+    border-radius: 3em;
+    border-bottom: 20%;
+    margin-top: 20%;
+
+
+}
+
+.yellow:hover {
+
+
+    align-self: center;
+    align-content: center;
+    margin: 0 auto;
+    background: green;
+    width: 6em;
+    height: 6em;
+    border-radius: 3em;
+    border-bottom: 20%;
+    margin-top: 20%;
+
+
+}
+
+
+.red:hover {
+
+
+    align-self: center;
+    align-content: center;
+    margin: 0 auto;
+    background: green;
+    width: 6em;
+    height: 6em;
+    border-radius: 3em;
+    border-bottom: 20%;
+    margin-top: 20%;
+
+}
+
+*/
