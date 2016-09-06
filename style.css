@@ -1,10 +1,35 @@
 .body {
 
     display: flex;
+    flex-flow: row;
+    flex-direction: row;
 }
 
-
 .wrapper {
+
+  display: flex;
+  height: 32em;
+  width: 10em;
+  flex-direction: column;
+  background: grey;
+  border: 2px solid;
+  margin: 10px;
+
+}
+
+.container_first .container_second {
+
+
+    display: flex;
+        height: 32em;
+    width: 10em;
+    flex-direction: column;
+    background: grey;
+
+}
+
+/*
+.wrapper_vert {
 
 
     display: flex;
@@ -15,6 +40,18 @@
 
 }
 
+.wrapper_hor {
+
+  display: flex;
+  height: 10em;
+  width: 32em;
+  flex-direction: column;
+  background: grey;
+
+
+}
+
+*/
 
 .light {
 
@@ -60,7 +97,7 @@
 
 }
 
-
+/*
 .swtch_clr {
 
 
@@ -68,7 +105,7 @@
        height: 3em;
 
 }
-
+*/
 .red {
 
 
@@ -207,5 +244,4 @@
     margin-top: 20%;
 
 }
-
 */

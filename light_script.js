@@ -1,77 +1,48 @@
+var lightWidget = (function (){
 
-var LightWidget = (function () {
+      var TEMPLATE = `<div class = 'wrapper'>
 
-    function Constructor (rootElement){
+        <div class = 'buttons'>
+           <button class= 'on_off_btn' type = 'button'>On/Off</button>
+           <button class = 'swtch_orntn' type = 'button'>vert/horizontal</button>
+       </div>
 
-    var e = new Event('MouseEvents');
+        <div class = 'light'>
+              <div class = 'red'></div>
+              <div class = 'yellow'></div>
+              <div class = 'green'></div>
+        </div>
 
-    this._rootElement = document.querySelector(rootElement),
-    this._btnAdd = this._rootElement.querySelector(.'on_off_btn');
-    this._btn_swtch = this._rootElement.querySelector(.'swtch_orntn');
-    this._swtch_color = this._rootElement.querySelector(.'swtch_color');
+  </div>`;
 
+function Constructor (rootElement) {
+     this._root = document.querySelector(rootElement);
+     this.createLightwidget();
+     this.addEvents();
 
-    Constructor.prototype._handleEvent = function (){
+}
 
-                 var self = this;
+   Constructor.prototype.createLightwidget = function () {
+      var newTemplate = this.TEMPLATE;
+      this._root.InnerHTML = newTemplate;
+   };
 
-             this._rootElement.addEventListener('click', function (e){
+   Constructor.prototype.addEvents = function (){
 
-                  if (e.target.classList.contains('on_off_btn')){
-                        self.switchOff();
+        this.onOffBtn = this._root.querySelector('on_off_btn'),
+        this.switchColorBtn = this._root.querySelector('swtch_color');
 
-                  };
+                  onOffBtn.addEventListener('click', function (){
+                           console.log("You've just pressed the onOff button");
 
-                  if (e.target.classList.contains('swtch_orntn')) {
-                        self.switchOrientation();
+                  });
 
-                  };
+                  switchColorBtn.addEventListener('click', function (){
+                           console.log("You've clicked switcher button");
 
-                  if (e.target.classList.contains('swtch_color')){
-                         self.switchColor();
+                  });
 
+         };
 
-                  };
-
-             });
-
-      };
-
-
-             Constructor.prototype.switchOnOff = function () {
-
-
-
-      };
-
-             Constructor.prototype.switchOrientation = function () {
-
-
-
-      };
-
-             Constructor.prototype.switchColor = function () {
-
-                  function newDiv(div){
-                    this.div = div;
-
-                  };
-
-                  var divGreen = newDiv('green_active');
-                  var dibYellow = newDiv('yellow_active');
-                  var divRed = newDiv('red_active');
-
-                 function () {
-
-
-              }
-
-
-              };
-          };
-
-
-
-     return Constructor;
-
-})
+   return Constructor;
+})();
